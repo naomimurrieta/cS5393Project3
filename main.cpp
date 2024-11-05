@@ -1,3 +1,9 @@
+//Sources:
+//THE ALEC IT CAME IN CLUTCH!!!
+//and chatgpt
+
+
+
 #include <iostream>
 #include "implementation.h"
 

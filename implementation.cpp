@@ -200,6 +200,7 @@ void implementation::Testing(DSString fileName) {
         }
 
     //if the sentiment count is 0 you do not really know if it is positive or negative
+    //So we make it so that it would be positive
 
     //CHECKPOINTTTTT
         mapSen[iD] = netSenti >= 0;
@@ -275,6 +276,8 @@ void implementation::Checking(DSString file1, DSString file2, DSString file3) {
     //Converting into a double that initially returns the wrong percentage and if subtracted 1 will give
     //the right percentage.
     double accuracy = 1 - ((double)(wrongID.size()) / (mapSen.size()));
+
+    //Outputs the number to 3 decimals
     res2 << setprecision(3) << accuracy << endl;
 
     for (int i =0; i < wrongID.size(); i++){
