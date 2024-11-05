@@ -31,7 +31,9 @@ set(CMAKE_VERBOSE_MAKEFILE ON)
 add_compile_options(-Wall -Wextra -pedantic)
 
 # Create the executable (s)
-add_executable(sentiment main.cpp DSString.cpp)
+add_executable(sentiment main.cpp DSString.cpp
+        implementation.cpp
+        implementation.h)
 
 add_executable(test_DSString test_DSString.cpp DSString.cpp)
 
